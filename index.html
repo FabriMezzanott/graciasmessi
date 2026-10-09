@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gracias, Lionel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:wght@400;500;700&family=Lora:ital,wght@0,500;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="barra">
+    <div class="barra-marca">
+        <div class="numero">10</div>
+        <p>Eternamente agradecidos</p>
+    </div>
+    <nav>
+        <a class="boton" href="#gracias">Sumar mi gracias</a>
+    </nav>
+</header>
+
+<main>
+
+    <div class="hero">
+        <h1>Gracias,<br>Lionel</h1>
+        <div class="hero-tarjeta">
+            <h2>Mandale un mensaje de agradecimiento a Lionel</h2>
+            <a class="boton" href="#gracias">Sumar mi gracias</a>
+        </div>
+    </div>
+
+    <div class="hinchada">
+        <h2>Cuando canta uno, cantamos todos.</h2>
+        <div class="hinchada-pie">
+            <p>La bandera en el balcón. La radio del abuelo. La camiseta que pasa de hermano a hermano. Nuestra manera de vivir el fútbol tiene un nombre: estar juntos.</p>
+            <p class="cita">"Esta hinchada no se olvida."</p>
+        </div>
+    </div>
+
+    <div class="recuerdos">
+        <div class="recuerdos-cabecera">
+            <h2>¿Te acordás dónde estabas?</h2>
+            <p>Hay goles que son una dirección, una mesa familiar, una voz en la radio. Estos momentos también son tuyos.</p>
+        </div>
+
+        <div class="recuerdos-lista">
+            <div class="recuerdo">
+                <div class="foto">
+                    <img src="img/2005.jpg" alt="Messi en el Sub-20 de 2005">
+                    <div class="anio">2005</div>
+                </div>
+                <p class="etiqueta">El comienzo</p>
+                <h3>Un pibe. Toda la ilusión.</h3>
+                <p>Con la Sub-20, Leo empezó a mostrar ese talento que ya nos hacía soñar.</p>
+            </div>
+
+            <div class="recuerdo">
+                <div class="foto">
+                    <img src="img/2021.jpg" alt="Messi con la Copa América 2021">
+                    <div class="anio">2021</div>
+                </div>
+                <p class="etiqueta">La recompensa</p>
+                <h3>Por fin, el abrazo.</h3>
+                <p>La Copa América llegó después de tanto esperar. Y el abrazo fue de todo un país.</p>
+            </div>
+
+            <div class="recuerdo">
+                <div class="foto">
+                    <img src="img/2022.jpg" alt="Messi levantando la Copa del Mundo 2022">
+                    <div class="anio">2022</div>
+                </div>
+                <p class="etiqueta">La eternidad</p>
+                <h3>La alegría más nuestra.</h3>
+                <p>El capitán levantó la Copa. Y de Ushuaia a La Quiaca, nadie volvió a festejar solo.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="mensajes">
+        <div class="mensajes-cabecera">
+            <div>
+                <h2>Cada hincha tiene algo que decir.</h2>
+                <p>Una anécdota, una emoción, una frase que te salió del alma. Este es el lugar para escribir el mensaje que le mandarías al capitán.</p>
+            </div>
+            <a class="boton oscuro" href="#gracias">Escribí el tuyo</a>
+        </div>
+
+        <div class="mensajes-lista">
+            <div class="mensaje">
+                <div class="comillas">“</div>
+                <p class="mensaje-texto">Gracias por enseñarnos a caerse no es el final. Que se puede volver, y volver, hasta abrazar el sueño.</p>
+                <hr>
+                <p class="mensaje-ciudad">De Rosario</p>
+                <p class="mensaje-autor">Una hincha</p>
+            </div>
+
+            <div class="mensaje">
+                <div class="comillas">“</div>
+                <p class="mensaje-texto">Mi primer recuerdo de un Mundial es tu sonrisa con la Copa. No sé si hay una mejor forma de empezar a querer el fútbol.</p>
+                <hr>
+                <p class="mensaje-ciudad">De La Plata</p>
+                <p class="mensaje-autor">Un hincha</p>
+            </div>
+
+            <div class="mensaje">
+                <div class="comillas">“</div>
+                <p class="mensaje-texto">En mi casa no festejamos un gol. Nos abrazamos todos. Gracias por regalarnos esos segundos que van a durar toda la vida.</p>
+                <hr>
+                <p class="mensaje-ciudad">De Mar del Plata</p>
+                <p class="mensaje-autor">Una hincha</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="cierre" id="gracias">
+        <div class="cierre-texto">
+            <h2>No importa cuándo sea. Vamos a estar.</h2>
+            <p>Por cada gambeta. Por no rendirte.<br>Por hacernos sentir parte de algo enorme.</p>
+        </div>
+
+        <form class="formulario" action="guardar.php" method="post">
+            <h3>Tu gracias también cuenta.</h3>
+            <p class="formulario-intro">Pensá en ese momento que no olvidás más. ¿Qué te gustaría que Leo supiera?</p>
+
+            <div class="fila">
+                <div class="campo">
+                    <label for="nombre">Tu nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="¿Cómo te llamás?" maxlength="60" required>
+                </div>
+                <div class="campo">
+                    <label for="ciudad">Tu ciudad</label>
+                    <input type="text" id="ciudad" name="ciudad" placeholder="¿Desde dónde nos leés?" maxlength="60" required>
+                </div>
+            </div>
+
+            <div class="campo">
+                <label for="mensaje">Tu mensaje para Leo</label>
+                <textarea id="mensaje" name="mensaje" rows="5" placeholder="Gracias, Leo, por..." required></textarea>
+            </div>
+
+            <label class="casilla">
+                <input type="checkbox" name="publico" value="1">
+                Me gustaría que mi mensaje se muestre en la página.
+            </label>
+
+            <button class="boton" type="submit">Sumar mi gracias</button>
+            <p class="legal">Tu mensaje se guarda y podés pedir que se muestre en la página de mensajes.</p>
+        </form>
+    </div>
+
+</main>
+
+<footer class="pie">
+    <div class="barra-marca">
+        <div class="numero">10</div>
+        <p>Gracias, Capitán</p>
+    </div>
+    <nav>
+        <a href="index.html">El homenaje</a>
+        <a href="mensajes.php">Mensajes</a>
+        <a href="#gracias">Sumá tu gracias</a>
+    </nav>
+    <p>☆ ☆ ☆</p>
+    <p class="pie-legal">Hecho con cariño argentino.</p>
+</footer>
+
+</body>
+</html>

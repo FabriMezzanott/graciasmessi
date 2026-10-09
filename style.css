@@ -1,0 +1,484 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "DM Sans", Arial, sans-serif;
+    background-color: #0b1c2c;
+    color: #0b1c2c;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    font-family: "Anton", Impact, sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 1.05;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.boton {
+    display: inline-block;
+    background-color: #94d6f5;
+    color: #0b1c2c;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.boton:hover {
+    background-color: #b9e6fa;
+}
+
+.boton.oscuro {
+    background-color: #0b1c2c;
+    color: #ffffff;
+}
+
+.barra,
+.pie {
+    background-color: #0b1c2c;
+    color: #ffffff;
+}
+
+.barra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 24px;
+}
+
+.barra-marca {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.numero {
+    font-family: "Anton", Impact, sans-serif;
+    font-size: 26px;
+}
+
+.barra-marca p {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.hero {
+    position: relative;
+    min-height: 420px;
+    padding: 40px 24px;
+    background-color: #12304a;
+    background-image: linear-gradient(90deg, rgba(11, 28, 44, 0.7), rgba(11, 28, 44, 0.1)), url("img/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+}
+
+.hero h1 {
+    font-size: 110px;
+    line-height: 1.2;
+}
+
+.hero-tarjeta {
+    position: absolute;
+    right: 24px;
+    bottom: 0;
+    width: 280px;
+    padding: 24px;
+    background-color: #0b1c2c;
+    border-radius: 12px 12px 0 0;
+    text-align: center;
+}
+
+.hero-tarjeta h2 {
+    font-family: "DM Sans", Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: none;
+    margin-bottom: 18px;
+}
+
+.hinchada {
+    min-height: 260px;
+    padding: 40px 24px 24px;
+    margin-top: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #12304a;
+    background-image: linear-gradient(180deg, rgba(11, 28, 44, 0.3), rgba(11, 28, 44, 0.8)), url("img/estadio.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+}
+
+.hinchada h2 {
+    font-size: 52px;
+    max-width: 420px;
+}
+
+.hinchada-pie {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 24px;
+    margin-top: 24px;
+}
+
+.hinchada-pie p {
+    max-width: 320px;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.hinchada-pie .cita {
+    font-family: "Lora", Georgia, serif;
+    font-style: italic;
+    font-size: 14px;
+    text-align: right;
+    color: #94d6f5;
+}
+
+.recuerdos {
+    background-color: #ffffff;
+    padding: 48px 24px 56px;
+}
+
+.recuerdos-cabecera {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 24px;
+    margin-bottom: 28px;
+}
+
+.recuerdos-cabecera h2 {
+    font-size: 44px;
+    max-width: 300px;
+    color: #12304a;
+}
+
+.recuerdos-cabecera p {
+    max-width: 240px;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #4a5a68;
+}
+
+.recuerdos-lista {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.foto {
+    position: relative;
+}
+
+.foto img {
+    display: block;
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    background-color: #12304a;
+}
+
+.anio {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #ffffff;
+    padding: 4px 8px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.etiqueta {
+    margin-top: 14px;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.recuerdo h3 {
+    font-family: "Lora", Georgia, serif;
+    font-weight: 500;
+    font-size: 22px;
+    margin: 6px 0;
+}
+
+.recuerdo p {
+    font-size: 12px;
+    line-height: 1.5;
+    color: #4a5a68;
+}
+
+.recuerdo .etiqueta {
+    color: #0b1c2c;
+}
+
+.mensajes {
+    background-color: #94d6f5;
+    padding: 48px 24px 40px;
+}
+
+.mensajes-cabecera {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 24px;
+    margin-bottom: 28px;
+}
+
+.mensajes-cabecera h2 {
+    font-size: 44px;
+    max-width: 420px;
+    margin-bottom: 14px;
+}
+
+.mensajes-cabecera p {
+    max-width: 440px;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.mensajes-lista {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.mensaje {
+    background-color: #f8f6f1;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.comillas {
+    font-family: "Lora", Georgia, serif;
+    font-size: 36px;
+    line-height: 1;
+    color: #12304a;
+}
+
+.mensaje-texto {
+    font-family: "Lora", Georgia, serif;
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 8px 0 18px;
+}
+
+.mensaje hr {
+    width: 28px;
+    border: none;
+    border-top: 2px solid #94d6f5;
+    margin-bottom: 10px;
+}
+
+.mensaje-ciudad {
+    font-size: 10px;
+    color: #4a5a68;
+}
+
+.mensaje-autor {
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: 4px;
+}
+
+.cierre {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 32px;
+    padding: 56px 24px;
+    color: #ffffff;
+}
+
+.cierre-texto h2 {
+    font-size: 64px;
+    max-width: 380px;
+    margin-bottom: 20px;
+}
+
+.cierre-texto p {
+    font-family: "Lora", Georgia, serif;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #94d6f5;
+}
+
+.formulario {
+    width: 100%;
+    max-width: 420px;
+    padding: 24px;
+    border: 1px solid #2a4560;
+    border-radius: 4px;
+    background-color: #0f2438;
+}
+
+.formulario h3 {
+    font-family: "Lora", Georgia, serif;
+    font-weight: 500;
+    font-size: 22px;
+    margin-bottom: 6px;
+}
+
+.formulario-intro {
+    font-size: 11px;
+    color: #b5c4d1;
+    margin-bottom: 18px;
+}
+
+.fila {
+    display: flex;
+    gap: 12px;
+}
+
+.campo {
+    flex: 1;
+    margin-bottom: 14px;
+}
+
+.campo label {
+    display: block;
+    font-size: 10px;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.campo input,
+.campo textarea {
+    width: 100%;
+    padding: 10px;
+    font-family: inherit;
+    font-size: 12px;
+    color: #ffffff;
+    background-color: #0b1c2c;
+    border: 1px solid #2a4560;
+    border-radius: 3px;
+    resize: vertical;
+}
+
+.campo input:focus,
+.campo textarea:focus {
+    outline: 2px solid #94d6f5;
+}
+
+.casilla {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 10px;
+    color: #b5c4d1;
+    margin-bottom: 16px;
+}
+
+.legal {
+    font-size: 9px;
+    color: #8fa3b5;
+    margin-top: 12px;
+}
+
+.aviso {
+    font-size: 12px;
+    font-weight: 700;
+    padding: 10px;
+    border-radius: 3px;
+    margin-bottom: 14px;
+}
+
+.aviso.ok {
+    background-color: #94d6f5;
+    color: #0b1c2c;
+}
+
+.aviso.error {
+    background-color: #f4b6b6;
+    color: #5a1010;
+}
+
+.pie {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    padding: 20px 24px;
+    border-top: 1px solid #1d3650;
+    font-size: 11px;
+}
+
+.pie nav {
+    display: flex;
+    gap: 24px;
+    color: #b5c4d1;
+}
+
+.pie-legal {
+    width: 100%;
+    font-size: 9px;
+    color: #8fa3b5;
+}
+
+@media (max-width: 800px) {
+    .hero h1 {
+        font-size: 64px;
+    }
+
+    .hero-tarjeta {
+        position: static;
+        width: 100%;
+        margin-top: 24px;
+        border-radius: 12px;
+    }
+
+    .hinchada h2,
+    .recuerdos-cabecera h2,
+    .mensajes-cabecera h2,
+    .cierre-texto h2 {
+        font-size: 36px;
+    }
+
+    .hinchada-pie,
+    .recuerdos-cabecera,
+    .mensajes-cabecera,
+    .cierre {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hinchada-pie .cita {
+        text-align: left;
+    }
+
+    .recuerdos-lista,
+    .mensajes-lista {
+        grid-template-columns: 1fr;
+    }
+
+    .fila {
+        flex-direction: column;
+        gap: 0;
+    }
+}
